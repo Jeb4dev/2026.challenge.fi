@@ -12,3 +12,9 @@ Remember to insert the result in the flag format.
 
 [Download](https://nextcloud.haaukins.com/s/z279kJ3X8GYaq7e/download)
 sha256: 86072f11881e2c9ffe4fc81bdecc051c7d08459eae1f5a900a9f36cf4bc4c911
+
+## Solution
+
+Brute force key with backwards engineered python [code](rev.py).
+
+**Flag**: ddc{galois_meets_caesar}
