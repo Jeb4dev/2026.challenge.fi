@@ -4,7 +4,7 @@
 
 ## Challenge Description
 
-*TBD*
+So ehmmm… at least you didn’t get root!
 
 ## Solution
 

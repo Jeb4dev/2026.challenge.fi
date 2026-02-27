@@ -4,7 +4,9 @@
 
 ## Challenge Description
 
-*TBD*
+The reactor has gone into lockdown mode. Please help us access it!
+
+[Handout](https://nextcloud.haaukins.com/s/cRrCcC28F9Mp7jX/download)
 
 ## Solution
 
